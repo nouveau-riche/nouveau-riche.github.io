@@ -3,7 +3,15 @@ const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "index.html": "8f95a6b0bedc55a566f4be91b2587fde",
 "/": "8f95a6b0bedc55a566f4be91b2587fde",
+<<<<<<< HEAD
 "main.dart.js": "c7bbfeb49e6e91a4ef6b541f09a5c3ca",
+=======
+<<<<<<< HEAD
+"main.dart.js": "c7bbfeb49e6e91a4ef6b541f09a5c3ca",
+=======
+"main.dart.js": "ba783857bbc8b73e113f73162ebc0c47",
+>>>>>>> c76b35c0d4d758942176ce55b01d497d78101f5b
+>>>>>>> dea6c53fbc0a762cf570a4e901f1661e37473bd4
 "favicon.png": "d134a50dd745579fdd1f9d9591af2b52",
 "icons/nikunj.png": "d134a50dd745579fdd1f9d9591af2b52",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
@@ -16,6 +24,13 @@ const RESOURCES = {
 ".git/objects/59/b2bba4d8cf365e7ed0fe3671bc0bd1a29f4b0b": "85151d158d01d46883d89ae6b348a86e",
 ".git/objects/0c/8093451ea6b4b78991197752f4adcff2e75d2d": "0f31a222187a9bb0ebc477b916c3c99b",
 ".git/objects/03/95ceafc51f0ebec4449d08e90cbed5d4b2b594": "4ccf0b18e1cabb6427efbe7e8356b765",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+".git/objects/69/08d8b47c5100f083fea913c2c3116c53ba0c0a": "ee19aa11a8db3bc8051040dc0257faf5",
+=======
+>>>>>>> c76b35c0d4d758942176ce55b01d497d78101f5b
+>>>>>>> dea6c53fbc0a762cf570a4e901f1661e37473bd4
 ".git/objects/51/fe2aa257c8e1e39eebba13c7bb849b205808e9": "df9236a4b280fad2ce1d11682084bb87",
 ".git/objects/3d/8a6faa59650f0d6a7442ab9c45f99e4f9a4282": "803e6d75efac6f988287244912164801",
 ".git/objects/58/ef1d58f4860012974f4d6cbb4e79d7b0887fa7": "3885ddf525173eff8f8c90c0adb21a73",
@@ -38,6 +53,13 @@ const RESOURCES = {
 ".git/objects/ae/83a6ce2d5fcb93fc5bd78eba9086a4682d459b": "dabdb71d38f2c64199a73cc15b95d4a1",
 ".git/objects/eb/175774f53489eb24bdb6a34ea63f8122a7eae7": "d90d5c18f57df331ff2c808fa47c24e4",
 ".git/objects/c7/781afe899e9460791df1eedfd79c5cf8ce2742": "c4ca665c8b5ceae629a2d8126d25019e",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+".git/objects/c7/6b35c0d4d758942176ce55b01d497d78101f5b": "2ee8374e0b187a801df060b75cb9b1d5",
+=======
+>>>>>>> c76b35c0d4d758942176ce55b01d497d78101f5b
+>>>>>>> dea6c53fbc0a762cf570a4e901f1661e37473bd4
 ".git/objects/c9/f0e11fd0a201ead3e7da1d928196cec04c552b": "330c8fa7c2e2dd8854667b65149e89be",
 ".git/objects/fd/645a08eb405be99cd3d04503bbf1e5bd276ea0": "e4682d3ac74be79b1c6d0a8a206ca0eb",
 ".git/objects/cf/1c1abe04547ec9b556ed44a012b7f34c875215": "1065578c3e56d17c1ca55fef841bc49d",
@@ -77,6 +99,13 @@ const RESOURCES = {
 ".git/objects/96/183bbf38bde9110cb944a92f348a7863979901": "4adbd18546429845a2af7b8dbb35eace",
 ".git/objects/96/ed822673c5de26b6a8f784bc7ac63f6e6269a2": "cda9e9a92ffd0c9fd0e8610d06af34c6",
 ".git/objects/3a/b37b0d947886199f1c435eebc1afb0a343e32c": "e91b1dce11a5a65fd3db364462f1af94",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+".git/objects/37/ba48ddbad29a7ef3fab2289649563d4d732c86": "19b69a19219d998a34a44ae218f2b6a2",
+=======
+>>>>>>> c76b35c0d4d758942176ce55b01d497d78101f5b
+>>>>>>> dea6c53fbc0a762cf570a4e901f1661e37473bd4
 ".git/objects/01/a3155499b0f8b1d2894c1e2bf739d142df1876": "77230d9b631b55eaaa12659bc2ef40e3",
 ".git/objects/99/3927b1b59e2d44db317144ce6ef9a2612ad4f7": "7ca36f5e5774611b981e17af4235117d",
 ".git/objects/97/057a14c4ccef6656b3946f708088d6a990c287": "be152706baca505e5cbb7d217693be77",
@@ -95,6 +124,13 @@ const RESOURCES = {
 ".git/objects/b9/b978a493b0bafd36298d86fd14e841b30c865c": "eb6dbab18183d2743b04b9ad96bc5867",
 ".git/objects/b9/504b9998df266e5afc687282fd01e861ab99ac": "1f290e379aead3f22cf03206b7d1ee11",
 ".git/objects/e1/0cb06729728577da7b53df957c59eb9fbd25cc": "88d7d5ca76862597d8459e2285b227c7",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+".git/objects/cd/b0cf63c1c8f924cac22cd8ebe1f6c5cc119083": "0e0837d06939cb365e2058fccfdecf34",
+=======
+>>>>>>> c76b35c0d4d758942176ce55b01d497d78101f5b
+>>>>>>> dea6c53fbc0a762cf570a4e901f1661e37473bd4
 ".git/objects/cc/e801f7106f66def36c49b4381c99f2dc67908a": "514d7a4dd7a7fe15d09cc8bad23f5863",
 ".git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391": "c70c34cbeefd40e7c0149b7a0c2c64c2",
 ".git/objects/f7/4a104eb238bf83cccaeac0e0575aee0e8a6083": "3672785386701b4a31f71819c6d160b9",
@@ -105,8 +141,20 @@ const RESOURCES = {
 ".git/objects/cb/83a32a1f2a4414a7d6e85b3ebca615d400cfd1": "953f57b3c6bf892a6a658c06dd49d98a",
 ".git/objects/77/70db597b6783bc02a62bb5b8bda7ee949926c7": "d5d7010c350ef460b3a9a4396d18140a",
 ".git/objects/84/970f2f2e8cca7054d2eff991d197cfd1dd1e45": "18c6c764ff7050480d51a60f312c2c01",
+<<<<<<< HEAD
 ".git/objects/84/eaabf62869a267836541b83a66252b6d8a1f7f": "20ea5759b75317f625188b857b6e7ad0",
 ".git/objects/24/41df270c6987ae8df9468b6f0f19db176e2458": "52cc9ce3b06f9ae30e0b2498160f96d7",
+=======
+<<<<<<< HEAD
+".git/objects/84/c3db62ba882f253711b7bf5a085fd503b439cc": "114259b62524f43d0f01677ab4e63615",
+".git/objects/84/eaabf62869a267836541b83a66252b6d8a1f7f": "20ea5759b75317f625188b857b6e7ad0",
+".git/objects/24/41df270c6987ae8df9468b6f0f19db176e2458": "52cc9ce3b06f9ae30e0b2498160f96d7",
+".git/objects/23/e56c1c0d3af0aa99ae11551da97bbb8c30dbd2": "1ae8505c579d4b57f8797de776d2ccfe",
+=======
+".git/objects/84/eaabf62869a267836541b83a66252b6d8a1f7f": "20ea5759b75317f625188b857b6e7ad0",
+".git/objects/24/41df270c6987ae8df9468b6f0f19db176e2458": "52cc9ce3b06f9ae30e0b2498160f96d7",
+>>>>>>> c76b35c0d4d758942176ce55b01d497d78101f5b
+>>>>>>> dea6c53fbc0a762cf570a4e901f1661e37473bd4
 ".git/objects/15/9b15011009e1e691b0761e5627dc3f3aa452ad": "822c0ced8e90203ed87ff7e0082d7945",
 ".git/objects/12/a9942fe075554d92b75d28eb303694a378bcdc": "be70a4aa6d988555ef52a5f1ded6941a",
 ".git/objects/85/ca6167fcde3f48e607be47746674fed9324c69": "ce620ea19ab7bafa64f5aedfa4a2d946",
@@ -116,6 +164,13 @@ const RESOURCES = {
 ".git/objects/49/f4690a8043a80917ff18d6c90b4d626747f4d3": "e408d22b8d5f339c301f76b46bb78492",
 ".git/objects/40/0ba1fc777c076e9a0b72030b2342bd6d8476fc": "74978960e40ff2d3516e9ae20149b572",
 ".git/objects/2e/b25e36e0e8f71317240f823b68bd2e301d507b": "f7b37e958e9b9a64f05f9f191f75b043",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+".git/objects/47/96bd1653a3f0e9f57bbf794be6a124d8d95b30": "544b116f0d799641e34741314dcff55a",
+=======
+>>>>>>> c76b35c0d4d758942176ce55b01d497d78101f5b
+>>>>>>> dea6c53fbc0a762cf570a4e901f1661e37473bd4
 ".git/objects/47/98edd768a9cc6595ba92edaa4f5e54d710bfae": "dd35df0fc4404c83a619ca86bad21cc4",
 ".git/objects/8b/c12187ae62b975ff05d2b287b83c850af5af5a": "50986a767d6cd22fab3e0f25e4be1c40",
 ".git/objects/7f/5860117397441313ccdb4ba031b23d4df9df53": "70277437adfa4d86131041fb6783a807",
