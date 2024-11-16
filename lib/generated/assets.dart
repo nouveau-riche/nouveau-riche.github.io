@@ -2,6 +2,9 @@
 class Assets {
   Assets._();
 
+  static const String gifsInventory = 'assets/gifs/inventory.gif';
+  static const String gifsLearnerProject = 'assets/gifs/learner_project.gif';
+  static const String gifsSortizyProject = 'assets/gifs/sortizy_project.gif';
   static const String iconsAndroid = 'assets/icons/android.png';
   static const String iconsBloc = 'assets/icons/bloc.png';
   static const String iconsDart = 'assets/icons/dart.png';
@@ -10,6 +13,7 @@ class Assets {
   static const String iconsFlutter = 'assets/icons/flutter.png';
   static const String iconsGetx = 'assets/icons/getx.png';
   static const String iconsGithub = 'assets/icons/github.png';
+  static const String iconsJira = 'assets/icons/jira.png';
   static const String iconsLambda = 'assets/icons/lambda.png';
   static const String iconsMongodb = 'assets/icons/mongodb.png';
   static const String iconsPostman = 'assets/icons/postman.png';
@@ -26,7 +30,6 @@ class Assets {
   static const String imagesMeowl = 'assets/images/meowl.png';
   static const String imagesNikunj = 'assets/images/nikunj.JPG';
   static const String imagesPlaystore = 'assets/images/playstore.png';
-  static const String imagesProjectSortizy = 'assets/images/project_sortizy.png';
   static const String imagesSignature = 'assets/images/signature.png';
   static const String imagesSignatureDark = 'assets/images/signature_dark.png';
   static const String imagesSortizy = 'assets/images/sortizy.png';

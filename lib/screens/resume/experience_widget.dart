@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:nikunj_portfolio/data/modals/experience_modal.dart';
+import 'package:nikunj_portfolio/screens/resume/technologies_used_widget.dart';
 
 class ExperienceCard extends StatelessWidget {
   final ExperienceModal experience;
@@ -95,31 +96,7 @@ class ExperienceCard extends StatelessWidget {
             ),
           ),
           const Spacer(),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Wrap(
-              spacing: 20,
-              runSpacing: 20,
-              children: experience.technologies
-                  .map(
-                    (e) => Container(
-                      height: 50,
-                      width: 50,
-                      padding: const EdgeInsets.all(7),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.black.withOpacity(0.1),
-                      ),
-                      child: Image.asset(
-                        e,
-                        height: 30,
-                        width: 30,
-                      ),
-                    ),
-                  )
-                  .toList(),
-            ),
-          ),
+          TechnologiesUsedWidget(experience: experience),
           const SizedBox(height: 16),
         ],
       ),

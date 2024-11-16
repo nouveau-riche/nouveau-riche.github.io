@@ -48,9 +48,9 @@ class ProjectCardWidget extends StatelessWidget {
                 child: Text(
                   project.description,
                   style: const TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    height: 1.8,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w900,
+                    height: 1.7,
                   ),
                 ),
               ),

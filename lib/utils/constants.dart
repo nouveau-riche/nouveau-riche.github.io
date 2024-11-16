@@ -9,7 +9,7 @@ const projectsDescription =
     "Collection of innovative\nand impactful projects through\nclean design, efficient code, and\nscalable architecture, addressing\nreal-world challenges with\nrobust solutions";
 
 // Duration
-const kTestimonialSlidingDuration = Duration(seconds: 3);
+const kTestimonialSlidingDuration = Duration(seconds: 5);
 
 // Url
 const kLinkedUrl = "https://www.linkedin.com/in/nikunj-sharma-02/";

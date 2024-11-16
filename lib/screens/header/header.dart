@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:nikunj_portfolio/data/bloc/header/header_bloc.dart';
 import 'package:nikunj_portfolio/data/bloc/theme/theme_bloc.dart';
 import 'package:nikunj_portfolio/generated/assets.dart';
-import 'package:nikunj_portfolio/screens/header/header_btn_widget.dart';
+import 'package:nikunj_portfolio/screens/header/header_btn_parent_widget.dart';
 import 'package:nikunj_portfolio/screens/header/theme_switcher_widget.dart';
 
 class Header extends StatelessWidget {
@@ -43,41 +42,7 @@ class Header extends StatelessWidget {
             ),
           ),
           const Spacer(),
-          BlocBuilder<HeaderBloc, HeaderState>(
-            builder: (context, state) {
-              final index = state is HeaderIndexValue ? state.index : 0;
-
-              return Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  HeaderBtnWidget(
-                    text: 'ABOUT',
-                    index: 0,
-                    currentSelectedIndex: index,
-                    scrollFunction: () {},
-                  ),
-                  HeaderBtnWidget(
-                    text: 'RESUME',
-                    index: 1,
-                    currentSelectedIndex: index,
-                    scrollFunction: () {},
-                  ),
-                  HeaderBtnWidget(
-                    text: 'PROJECTS',
-                    index: 2,
-                    currentSelectedIndex: index,
-                    scrollFunction: () {},
-                  ),
-                  HeaderBtnWidget(
-                    text: 'CONTACT',
-                    index: 3,
-                    currentSelectedIndex: index,
-                    scrollFunction: () {},
-                  ),
-                ],
-              );
-            },
-          ),
+          const HeaderBtnParentWidget(),
           const SizedBox(width: 16),
           const ThemeSwitcherWidget(),
         ],

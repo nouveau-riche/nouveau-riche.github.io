@@ -9,7 +9,7 @@ final projects = [
     description:
         "Sortizy, along with its Easy to Cook Recipe Cards, Meal Planner, and Grocery Lists, is the Kitchen Management and Cooking App you’ve been waiting for!",
     githubUrl: "https://github.com/nouveau-riche/smart_kaksha",
-    imageUrl: Assets.imagesProjectSortizy,
+    imageUrl: Assets.gifsSortizyProject,
     cardColor: kCardColor,
     hasGithubUrl: false,
     hasPlayStoreUrl: true,
@@ -21,40 +21,43 @@ final projects = [
     id: 2,
     title: "THE ADVENTUROUS\nLEARNER",
     description:
-        "A Mobile application(Android and iOS) build with Flutter for school that aims to simplify creating, distributing and grading assignments.",
+        "Transforming everyday outings into hands-on learning experiences. Using our interactive map, parents and children can find nearby hands-on learning opportunities—whether it’s exploring nature, history, science, or the arts. Perfect for worldschooling, homeschooling, or simply enhancing a weekend adventure.",
     githubUrl: "https://github.com/nouveau-riche/smart_kaksha",
-    imageUrl:
-        "https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17.jpg",
+    imageUrl: Assets.gifsLearnerProject,
     cardColor: kCardColor1,
   ),
   ProjectModal(
     id: 3,
-    title: "SMART KAKSHA",
+    title: "FLAPPY BIRD",
     description:
-        "A Mobile application(Android and iOS) build with Flutter for school that aims to simplify creating, distributing and grading assignments.",
-    githubUrl: "https://github.com/nouveau-riche/smart_kaksha",
+        "Recreating the classic gameplay experience. The project involved designing smooth animations, managing physics for realistic bird motion, and implementing collision detection to ensure engaging gameplay. Optimized for both performance and adaptability across different devices and a focus on user experience.",
+    githubUrl: "https://github.com/nouveau-riche/Flappy-Bird",
     imageUrl:
         "https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17.jpg",
-    cardColor: kCardColor,
+    cardColor: kCardColor1,
+    hasGithubUrl: true,
   ),
   ProjectModal(
     id: 4,
-    title: "SNAKE GAME",
+    title: "SMART KAKSHA",
     description:
-        "A Mobile application(Android and iOS) build with Flutter for school that aims to simplify creating, distributing and grading assignments.",
+        "Mobile application that streamlines the assignment process for schools. It enables educators to easily create, distribute, and grade assignments while providing students with a simple, organized interface for tracking and submitting their work.",
     githubUrl: "https://github.com/nouveau-riche/smart_kaksha",
-    imageUrl:
-        "https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17.jpg",
-    cardColor: kCardColor1,
+    imageUrl: Assets.imagesClasses,
+    cardColor: kCardColor,
+    hasGithubUrl: true,
+    hasPlayStoreUrl: true,
+    playStoreUrl:
+        "https://play.google.com/store/apps/details?id=com.smart_kaksha",
   ),
   ProjectModal(
     id: 5,
-    title: "WATCHN",
+    title: "WHO GETS THIS",
     description:
-        "A Mobile application(Android and iOS) build with Flutter for school that aims to simplify creating, distributing and grading assignments.",
-    githubUrl: "https://github.com/nouveau-riche/smart_kaksha",
-    imageUrl:
-        "https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17.jpg",
+        "Mobile application built using Flutter and Firebase that enables users to capture memorable moment and organize them into collections. It allows for easy PDF generation and sharing, providing a seamless way for users to preserve and share their experiences.",
+    githubUrl: "https://github.com/nouveau-riche/Who_gets_this",
+    imageUrl: Assets.gifsInventory,
     cardColor: kCardColor1,
+    hasGithubUrl: true,
   ),
 ];

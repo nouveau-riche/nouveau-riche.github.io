@@ -7,7 +7,7 @@ class ExperienceModal {
   final String jobTitle;
   final String description;
   final String timeline;
-  final List<String> technologies;
+  final List<Technology> technologies;
   final Color cardColor;
 
   ExperienceModal({
@@ -19,5 +19,17 @@ class ExperienceModal {
     required this.cardColor,
     required this.description,
     required this.technologies,
+  });
+}
+
+class Technology {
+  final int id;
+  final String name;
+  final String image;
+
+  Technology({
+    required this.id,
+    required this.name,
+    required this.image,
   });
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nikunj_portfolio/data/data/projects_data.dart';
 
+import 'package:nikunj_portfolio/data/data/projects_data.dart';
 import 'package:nikunj_portfolio/screens/projects/project_description_card.dart';
 import 'package:nikunj_portfolio/screens/projects/project_card_widget.dart';
 
@@ -15,10 +15,14 @@ class Projects extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(0, 80, 0, 40),
       child: SizedBox(
         height: mq.height * 0.68,
-        child: ListView(scrollDirection: Axis.horizontal, children: [
-          const ProjectDescriptionCard(),
-          ...projects.map((e) => ProjectCardWidget(project: e))
-        ]),
+        child: ListView(
+          scrollDirection: Axis.horizontal,
+          children: [
+            const ProjectDescriptionCard(),
+            ...projects.map((e) => ProjectCardWidget(project: e)),
+            const SizedBox(width: 10),
+          ],
+        ),
       ),
     );
   }
