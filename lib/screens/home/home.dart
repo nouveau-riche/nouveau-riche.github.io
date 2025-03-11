@@ -7,26 +7,32 @@ import 'package:nikunj_portfolio/screens/projects/projects.dart';
 import 'package:nikunj_portfolio/screens/resume/resume.dart';
 import 'package:nikunj_portfolio/screens/testimonials/testimonials.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   const Home({super.key});
 
   @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  final ScrollController scrollController = ScrollController();
+
+  @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Column(
         children: [
-          Header(),
+          Header(scrollController: scrollController),
           Expanded(
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  AboutMe(),
-                  Projects(),
-                  Resume(),
-                  Testimonials(),
-                  Footer(),
-                ],
-              ),
+            child: ListView(
+              controller: scrollController,
+              children: const [
+                AboutMe(),
+                Projects(),
+                Resume(),
+                Testimonials(),
+                Footer(),
+              ],
             ),
           ),
         ],

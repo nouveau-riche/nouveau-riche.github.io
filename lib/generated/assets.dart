@@ -19,6 +19,8 @@ class Assets {
   static const String iconsPostman = 'assets/icons/postman.png';
   static const String iconsS3 = 'assets/icons/s3.png';
   static const String imagesAlpine = 'assets/images/alpine.png';
+  static const String imagesAnathaFastail = 'assets/images/anatha_fastail.jpeg';
+  static const String imagesAnkushMeowl = 'assets/images/ankush_meowl.jpeg';
   static const String imagesAppstore = 'assets/images/appstore.png';
   static const String imagesC = 'assets/images/c.png';
   static const String imagesCarrier = 'assets/images/carrier.png';
@@ -30,10 +32,12 @@ class Assets {
   static const String imagesMeowl = 'assets/images/meowl.png';
   static const String imagesNikunj = 'assets/images/nikunj.JPG';
   static const String imagesPlaystore = 'assets/images/playstore.png';
+  static const String imagesShaswatHappyminds = 'assets/images/shaswat_happyminds.jpeg';
   static const String imagesSignature = 'assets/images/signature.png';
   static const String imagesSignatureDark = 'assets/images/signature_dark.png';
   static const String imagesSortizy = 'assets/images/sortizy.png';
   static const String imagesStream = 'assets/images/stream.png';
   static const String imagesZujo = 'assets/images/zujo.png';
+  static const String imagesZuruokeSportzlite = 'assets/images/zuruoke_sportzlite.jpeg';
 
 }

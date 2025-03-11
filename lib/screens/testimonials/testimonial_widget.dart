@@ -64,7 +64,7 @@ class TestimonialWidget extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 20,
-                      backgroundImage: NetworkImage(
+                      backgroundImage: AssetImage(
                         testimonialModal.reviewerImage,
                       ),
                     ),

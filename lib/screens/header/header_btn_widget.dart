@@ -30,9 +30,8 @@ class HeaderBtnWidget extends StatelessWidget {
         ),
       ),
       onPressed: () {
-        context.read<HeaderBloc>().add(
-              UpdateHeaderSelectedButton(index: index),
-            );
+        scrollFunction();
+        context.read<HeaderBloc>().add(UpdateHeaderSelectedButton(index: index),);
       },
     );
   }

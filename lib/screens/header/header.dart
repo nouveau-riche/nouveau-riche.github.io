@@ -7,7 +7,10 @@ import 'package:nikunj_portfolio/screens/header/header_btn_parent_widget.dart';
 import 'package:nikunj_portfolio/screens/header/theme_switcher_widget.dart';
 
 class Header extends StatelessWidget {
-  const Header({super.key});
+  final ScrollController scrollController;
+
+  const Header({super.key, required this.scrollController});
+
 
   @override
   Widget build(BuildContext context) {
@@ -19,8 +22,8 @@ class Header extends StatelessWidget {
       child: Row(
         children: [
           Container(
-            height: 15,
-            width: 15,
+            height: 16,
+            width: 16,
             color: Theme.of(context).primaryColor,
           ),
           InkWell(
@@ -42,7 +45,7 @@ class Header extends StatelessWidget {
             ),
           ),
           const Spacer(),
-          const HeaderBtnParentWidget(),
+          HeaderBtnParentWidget(scrollController: scrollController),
           const SizedBox(width: 16),
           const ThemeSwitcherWidget(),
         ],
