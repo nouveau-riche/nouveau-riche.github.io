@@ -45,7 +45,7 @@ class HeaderBtnParentWidget extends StatelessWidget {
               },
             ),
             HeaderBtnWidget(
-              text: 'Experience',
+              text: 'EXPERIENCE',
               index: 2,
               currentSelectedIndex: index,
               scrollFunction: () {

@@ -7,7 +7,9 @@ import 'package:nikunj_portfolio/screens/about_me/follow_btn_tile_widget.dart';
 import 'package:nikunj_portfolio/utils/method_utils.dart';
 
 class AboutMe extends StatelessWidget {
-  const AboutMe({super.key});
+  final ScrollController scrollController;
+
+  const AboutMe({super.key, required this.scrollController});
 
   @override
   Widget build(BuildContext context) {
@@ -142,7 +144,11 @@ class AboutMe extends StatelessWidget {
                           width: 120,
                           child: TextButton(
                             onPressed: () {
-                              // TODO: scroll to projects
+                              scrollController.animateTo(
+                                1 * mq.height * 1.12,
+                                duration: const Duration(milliseconds: 500),
+                                curve: Curves.easeInOut,
+                              );
                             },
                             style: TextButton.styleFrom(
                               shape: RoundedRectangleBorder(

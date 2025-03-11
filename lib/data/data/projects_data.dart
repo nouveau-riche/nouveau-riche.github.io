@@ -22,18 +22,8 @@ final projects = [
     title: "THE ADVENTUROUS\nLEARNER",
     description:
         "Transforming everyday outings into hands-on learning experiences. Using our interactive map, parents and children can find nearby hands-on learning opportunities—whether it’s exploring nature, history, science, or the arts. Perfect for worldschooling, homeschooling, or simply enhancing a weekend adventure.",
-    githubUrl: "https://github.com/nouveau-riche/smart_kaksha",
+    githubUrl: "https://github.com/akshitsharma11/Adventuours-App/tree/yash_latest",
     imageUrl: Assets.gifsLearnerProject,
-    cardColor: kCardColor1,
-  ),
-  ProjectModal(
-    id: 3,
-    title: "FLAPPY BIRD",
-    description:
-        "Recreating the classic gameplay experience. The project involved designing smooth animations, managing physics for realistic bird motion, and implementing collision detection to ensure engaging gameplay. Optimized for both performance and adaptability across different devices and a focus on user experience.",
-    githubUrl: "https://github.com/nouveau-riche/Flappy-Bird",
-    imageUrl:
-        "https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17.jpg",
     cardColor: kCardColor1,
     hasGithubUrl: true,
   ),

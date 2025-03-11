@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:stacked_card_carousel/stacked_card_carousel.dart';
 
 import 'package:nikunj_portfolio/data/data/experience_data.dart';
-import 'package:nikunj_portfolio/screens/resume/experience_widget.dart';
+import 'package:nikunj_portfolio/screens/experience/experience_widget.dart';
 
 class Resume extends StatelessWidget {
   const Resume({super.key});

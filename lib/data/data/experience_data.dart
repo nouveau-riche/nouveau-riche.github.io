@@ -33,7 +33,7 @@ final experienceData = [
     companyLogo: Assets.imagesAlpine,
     jobTitle: "Flutter Developer",
     description:
-        "Working on Vi Guide application Sportzlite Community is a community of sports lovers coming together to discuss/argue on topics, share ideas, represent their favorite sports team and in the process knowing more from others around them",
+        "♦ Application architecture design\n♦ Developed responsive UI according to design from scratch\n♦ Database and API connection\n♦ Deployed application to Google PlayStore and AppStore Connect",
     technologies: [
       Technology(id: 1, name: "Flutter", image: Assets.iconsFlutter),
       Technology(id: 2, name: "Firebase", image: Assets.iconsFirebase),
@@ -53,7 +53,7 @@ final experienceData = [
     companyLogo: Assets.imagesSortizy,
     jobTitle: "Flutter Developer",
     description:
-        "Working on Vi Guide application Sportzlite Community is a community of sports lovers coming together to discuss/argue on topics, share ideas, represent their favorite sports team and in the process knowing more from others around them",
+        "♦ Implemented user authentication for phone number and google signin using Firebase.\n♦ Overhauled the UI for search functionality which helped users to search quicker and improved search time by 11%.\n♦ Implemented analytics feature for content creators.\n♦ Routine updates for improving features and strengthen security.",
     technologies: [
       Technology(id: 1, name: "Flutter", image: Assets.iconsFlutter),
       Technology(id: 2, name: "Firebase", image: Assets.iconsFirebase),
@@ -73,7 +73,7 @@ final experienceData = [
     companyLogo: Assets.imagesZujo,
     jobTitle: "Flutter Instructor",
     description:
-        "Mentored college students to develop the skill of Flutter, Firebase, Dart and Github. During these months, I have successfully mentored some students and empowered them building intermediate level Flutter Application.",
+        "♦ Mentored college students to develop the skill of Flutter, Firebase, Dart and Github.\n♦ During these months, I have successfully mentored some students and empowered them building intermediate level Flutter Application.",
     technologies: [
       Technology(id: 1, name: "Flutter", image: Assets.iconsFlutter),
       Technology(id: 2, name: "Firebase", image: Assets.iconsFirebase),
@@ -89,7 +89,7 @@ final experienceData = [
     companyLogo: Assets.imagesDsc,
     jobTitle: "Core Team Member",
     description:
-        "Facilitated workshops about programming, open source and and mobile development.",
+        "♦ Facilitated workshops about programming, open source and and mobile development.",
     technologies: [
       Technology(id: 1, name: "Flutter", image: Assets.iconsFlutter),
       Technology(id: 3, name: "Dart", image: Assets.iconsDart),

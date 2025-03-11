@@ -59,28 +59,31 @@ class Footer extends StatelessWidget {
                 ],
               ),
               const SizedBox(width: 18),
-              GestureDetector(
-                onTap: () {
-                  UrlLauncherUtils.openMail();
-                },
-                child: const Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Text(
-                      'Write',
-                      style: TextStyle(
-                        fontWeight: FontWeight.w900,
-                        fontSize: 14,
+              MouseRegion(
+                cursor: SystemMouseCursors.click,
+                child: GestureDetector(
+                  onTap: () {
+                    UrlLauncherUtils.openMail();
+                  },
+                  child: const Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Text(
+                        'Write',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w900,
+                          fontSize: 14,
+                        ),
                       ),
-                    ),
-                    Text(
-                      kEmail,
-                      style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 13,
+                      Text(
+                        kEmail,
+                        style: TextStyle(
+                          fontWeight: FontWeight.w600,
+                          fontSize: 13,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
               const SizedBox(width: 10),

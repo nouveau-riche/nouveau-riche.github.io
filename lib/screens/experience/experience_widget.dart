@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:nikunj_portfolio/data/modals/experience_modal.dart';
-import 'package:nikunj_portfolio/screens/resume/technologies_used_widget.dart';
+import 'package:nikunj_portfolio/screens/experience/technologies_used_widget.dart';
 
 class ExperienceCard extends StatelessWidget {
   final ExperienceModal experience;
