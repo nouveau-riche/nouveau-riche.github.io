@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:nikunj_portfolio/data/modals/experience_modal.dart';
 import 'package:nikunj_portfolio/screens/experience/technologies_used_widget.dart';
+import 'package:nikunj_portfolio/utils/url_launcher_utils.dart';
 
 class ExperienceCard extends StatelessWidget {
   final ExperienceModal experience;
@@ -13,7 +14,7 @@ class ExperienceCard extends StatelessWidget {
     final mq = MediaQuery.sizeOf(context);
 
     return Container(
-      height: mq.height * 0.52,
+      height: mq.height * 0.61,
       width: mq.width * 0.62,
       margin: const EdgeInsets.only(top: 10),
       decoration: BoxDecoration(
@@ -34,14 +35,16 @@ class ExperienceCard extends StatelessWidget {
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(26),
+              InkWell(
+                onTap: () {
+                  UrlLauncherUtils.openUrl(experience.companyUrl);
+                },
                 child: Container(
                   height: 120,
                   width: 120,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.black.withOpacity(0.1),
+                    borderRadius: BorderRadius.circular(24),
+                    color: Colors.black.withValues(alpha: 0.1),
                   ),
                   padding: const EdgeInsets.all(8),
                   child: Image.network(experience.companyLogo),
@@ -64,7 +67,7 @@ class ExperienceCard extends StatelessWidget {
                     "@${experience.company}",
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
-                      color: Colors.black45,
+                      color: Colors.black54,
                     ),
                   ),
                 ],
@@ -76,7 +79,7 @@ class ExperienceCard extends StatelessWidget {
                   experience.timeline,
                   style: const TextStyle(
                     fontWeight: FontWeight.bold,
-                    color: Colors.black26,
+                    color: Colors.black38,
                   ),
                 ),
               ),
@@ -90,7 +93,7 @@ class ExperienceCard extends StatelessWidget {
               experience.description,
               style: const TextStyle(
                 fontSize: 15,
-                color: Colors.black45,
+                color: Colors.black54,
                 fontWeight: FontWeight.bold,
               ),
             ),

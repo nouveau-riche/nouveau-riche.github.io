@@ -25,7 +25,7 @@ class ProjectRedirectWidget extends StatelessWidget {
                   UrlLauncherUtils.openUrl(project.playStoreUrl ?? "");
                 },
                 child: Image.asset(
-                  Assets.imagesPlaystore,
+                  Assets.iconsPlaystore,
                   fit: BoxFit.fill,
                   height: 40,
                   width: 140,
@@ -41,7 +41,7 @@ class ProjectRedirectWidget extends StatelessWidget {
                   UrlLauncherUtils.openUrl(project.appStoreUrl ?? "");
                 },
                 child: Image.asset(
-                  Assets.imagesAppstore,
+                  Assets.iconsAppstore,
                   fit: BoxFit.fill,
                   height: 40,
                   width: 140,
@@ -56,7 +56,7 @@ class ProjectRedirectWidget extends StatelessWidget {
               height: 40,
               width: 150,
               decoration: BoxDecoration(
-                color: Colors.black.withOpacity(0.1),
+                color: Colors.black.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(10),
               ),
               child: TextButton.icon(

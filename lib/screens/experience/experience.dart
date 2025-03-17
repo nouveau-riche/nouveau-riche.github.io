@@ -5,8 +5,8 @@ import 'package:stacked_card_carousel/stacked_card_carousel.dart';
 import 'package:nikunj_portfolio/data/data/experience_data.dart';
 import 'package:nikunj_portfolio/screens/experience/experience_widget.dart';
 
-class Resume extends StatelessWidget {
-  const Resume({super.key});
+class Experience extends StatelessWidget {
+  const Experience({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -33,10 +33,10 @@ class Resume extends StatelessWidget {
         ),
         const SizedBox(height: 26),
         SizedBox(
-          height: mq.height * 0.65,
+          height: mq.height * 0.74,
           width: mq.width * 0.7,
           child: StackedCardCarousel(
-            spaceBetweenItems: 600,
+            spaceBetweenItems: 550,
             initialOffset: 0,
             items: experienceData
                 .map((e) => ExperienceCard(experience: e))

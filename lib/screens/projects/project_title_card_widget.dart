@@ -19,15 +19,15 @@ class ProjectTitleCardWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(30),
         gradient: LinearGradient(
           colors: [
-            Colors.pink.withOpacity(0.2),
-            Colors.greenAccent.withOpacity(0.2),
-            Colors.blue.withOpacity(0.2),
-            Colors.amber.withOpacity(0.2),
+            Colors.pink.withValues(alpha: 0.2),
+            Colors.greenAccent.withValues(alpha: 0.2),
+            Colors.blue.withValues(alpha: 0.2),
+            Colors.amber.withValues(alpha: 0.2),
           ],
           begin: Alignment.bottomLeft,
           end: Alignment.topRight,
         ),
-        color: Colors.grey.shade200.withOpacity(0.5),
+        color: Colors.grey.shade200.withValues(alpha: 0.5),
       ),
       child: RotatedBox(
         quarterTurns: 3,

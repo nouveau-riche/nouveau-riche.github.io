@@ -22,7 +22,7 @@ final projects = [
     title: "THE ADVENTUROUS\nLEARNER",
     description:
         "Transforming everyday outings into hands-on learning experiences. Using our interactive map, parents and children can find nearby hands-on learning opportunities—whether it’s exploring nature, history, science, or the arts. Perfect for worldschooling, homeschooling, or simply enhancing a weekend adventure.",
-    githubUrl: "https://github.com/akshitsharma11/Adventuours-App/tree/yash_latest",
+    githubUrl: "https://github.com/nouveau-riche/adventurous",
     imageUrl: Assets.gifsLearnerProject,
     cardColor: kCardColor1,
     hasGithubUrl: true,
@@ -33,7 +33,7 @@ final projects = [
     description:
         "Mobile application that streamlines the assignment process for schools. It enables educators to easily create, distribute, and grade assignments while providing students with a simple, organized interface for tracking and submitting their work.",
     githubUrl: "https://github.com/nouveau-riche/smart_kaksha",
-    imageUrl: Assets.imagesClasses,
+    imageUrl: Assets.iconsClasses,
     cardColor: kCardColor,
     hasGithubUrl: true,
     hasPlayStoreUrl: true,

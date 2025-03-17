@@ -49,7 +49,7 @@ class HeaderBtnParentWidget extends StatelessWidget {
               index: 2,
               currentSelectedIndex: index,
               scrollFunction: () {
-                scrollToIndex(2, mq.height * 0.98);
+                scrollToIndex(2, mq.height * 0.995);
               },
             ),
             HeaderBtnWidget(
@@ -57,7 +57,7 @@ class HeaderBtnParentWidget extends StatelessWidget {
               index: 3,
               currentSelectedIndex: index,
               scrollFunction: () {
-                scrollToIndex(3, mq.height * 0.97);
+                scrollToIndex(3, mq.height);
               },
             ),
           ],

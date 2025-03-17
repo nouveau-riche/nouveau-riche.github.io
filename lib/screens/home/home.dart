@@ -4,7 +4,7 @@ import 'package:nikunj_portfolio/screens/about_me/about_me.dart';
 import 'package:nikunj_portfolio/screens/footer/footer.dart';
 import 'package:nikunj_portfolio/screens/header/header.dart';
 import 'package:nikunj_portfolio/screens/projects/projects.dart';
-import 'package:nikunj_portfolio/screens/experience/resume.dart';
+import 'package:nikunj_portfolio/screens/experience/experience.dart';
 import 'package:nikunj_portfolio/screens/testimonials/testimonials.dart';
 
 class Home extends StatefulWidget {
@@ -26,10 +26,10 @@ class _HomeState extends State<Home> {
           Expanded(
             child: ListView(
               controller: scrollController,
-              children:  [
+              children: [
                 AboutMe(scrollController: scrollController),
                 const Projects(),
-                const Resume(),
+                const Experience(),
                 const Testimonials(),
                 const Footer(),
               ],

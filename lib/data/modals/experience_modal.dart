@@ -4,6 +4,7 @@ class ExperienceModal {
   final int id;
   final String company;
   final String companyLogo;
+  final String companyUrl;
   final String jobTitle;
   final String description;
   final String timeline;
@@ -14,6 +15,7 @@ class ExperienceModal {
     required this.id,
     required this.company,
     required this.companyLogo,
+    required this.companyUrl,
     required this.jobTitle,
     required this.timeline,
     required this.cardColor,

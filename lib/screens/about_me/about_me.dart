@@ -59,7 +59,7 @@ class AboutMe extends StatelessWidget {
                             backgroundColor:
                                 Theme.of(context).scaffoldBackgroundColor,
                             backgroundImage: const AssetImage(
-                              Assets.imagesNikunj,
+                              Assets.iconsNikunj,
                             ),
                           ),
                           const Text(

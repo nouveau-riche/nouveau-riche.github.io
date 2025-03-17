@@ -26,8 +26,7 @@ class MyApp extends StatelessWidget {
       ],
       child: BlocBuilder<ThemeBloc, ThemeState>(
         builder: (context, state) {
-          final isDarkTheme =
-              state is CurrentThemeState ? state.isDarkTheme : false;
+          final isDarkTheme = state is CurrentThemeState ? state.isDarkTheme : false;
 
           return MaterialApp(
             title: "Nikunj Portfolio",
@@ -40,3 +39,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+

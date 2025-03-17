@@ -20,12 +20,12 @@ class ProjectDescriptionCard extends StatelessWidget {
         gradient: LinearGradient(
           colors: [
             Colors.white,
-            Colors.blue.withOpacity(0.1),
+            Colors.blue.withValues(alpha: 0.1),
           ],
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
         ),
-        color: Colors.grey.shade200.withOpacity(0.5),
+        color: Colors.grey.shade200.withValues(alpha: 0.5),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

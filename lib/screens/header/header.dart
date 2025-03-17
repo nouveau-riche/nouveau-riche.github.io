@@ -35,8 +35,8 @@ class Header extends StatelessWidget {
 
                 return Image.asset(
                   isDarkTheme
-                      ? Assets.imagesSignatureDark
-                      : Assets.imagesSignature,
+                      ? Assets.iconsSignatureDark
+                      : Assets.iconsSignature,
                   height: 56,
                   width: 210,
                   fit: BoxFit.fill,
