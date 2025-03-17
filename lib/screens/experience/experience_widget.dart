@@ -47,7 +47,7 @@ class ExperienceCard extends StatelessWidget {
                     color: Colors.black.withValues(alpha: 0.1),
                   ),
                   padding: const EdgeInsets.all(8),
-                  child: Image.network(experience.companyLogo),
+                  child: Image.asset(experience.companyLogo),
                 ),
               ),
               const SizedBox(width: 20),

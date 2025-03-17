@@ -34,7 +34,7 @@ class ProjectCardWidget extends StatelessWidget {
                 ),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(20),
-                  child: Image.network(
+                  child: Image.asset(
                     project.imageUrl,
                     height: mq.height * 0.28,
                     width:  mq.width * 0.25,
