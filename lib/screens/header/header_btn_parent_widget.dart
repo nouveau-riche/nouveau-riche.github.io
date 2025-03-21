@@ -12,7 +12,7 @@ class HeaderBtnParentWidget extends StatelessWidget {
   void scrollToIndex(int index, double height) {
     scrollController.animateTo(
       index * height,
-      duration: const Duration(milliseconds: 500),
+      duration: const Duration(milliseconds: 400),
       curve: Curves.easeInOut,
     );
   }

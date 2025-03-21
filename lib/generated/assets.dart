@@ -10,6 +10,7 @@ class Assets {
   static const String iconsAndroid = 'assets/icons/android.png';
   static const String iconsAnkushMeowl = 'assets/icons/ankush_meowl.jpeg';
   static const String iconsAppstore = 'assets/icons/appstore.png';
+  static const String iconsAzure = 'assets/icons/azure.png';
   static const String iconsBloc = 'assets/icons/bloc.png';
   static const String iconsCarrier = 'assets/icons/carrier.png';
   static const String iconsClasses = 'assets/icons/classes.png';

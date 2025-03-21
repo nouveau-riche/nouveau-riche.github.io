@@ -21,6 +21,7 @@ final experienceData = [
       Technology(id: 9, name: "Android Studio", image: Assets.iconsAndroid),
       Technology(id: 10, name: "Postman", image: Assets.iconsPostman),
       Technology(id: 11, name: "Jira", image: Assets.iconsJira),
+      Technology(id: 11, name: "Azure Devops", image: Assets.iconsAzure),
     ],
     timeline: "Jul 2023 - Present",
     cardColor: const Color.fromRGBO(244, 236, 247, 1),
