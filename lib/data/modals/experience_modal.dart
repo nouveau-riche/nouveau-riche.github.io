@@ -6,7 +6,7 @@ class ExperienceModal {
   final String companyLogo;
   final String companyUrl;
   final String jobTitle;
-  final String description;
+  final List<String> description;
   final String timeline;
   final List<Technology> technologies;
   final Color cardColor;

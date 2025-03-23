@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:nikunj_portfolio/data/bloc/header/header_bloc.dart';
+import 'package:nikunj_portfolio/data/bloc/header/header_cubit.dart';
 
 class HeaderBtnWidget extends StatelessWidget {
   final int index;
@@ -19,6 +19,8 @@ class HeaderBtnWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final cubit = context.read<HeaderCubit>();
+
     return TextButton(
       child: Text(
         text,
@@ -31,7 +33,7 @@ class HeaderBtnWidget extends StatelessWidget {
       ),
       onPressed: () {
         scrollFunction();
-        context.read<HeaderBloc>().add(UpdateHeaderSelectedButton(index: index),);
+        cubit.updateHeaderIndex(index);
       },
     );
   }

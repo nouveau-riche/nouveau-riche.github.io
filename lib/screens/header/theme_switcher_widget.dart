@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:nikunj_portfolio/data/bloc/theme/theme_bloc.dart';
+import 'package:nikunj_portfolio/data/bloc/theme/theme_cubit.dart';
+import 'package:nikunj_portfolio/data/bloc/theme/theme_state.dart';
 
 class ThemeSwitcherWidget extends StatelessWidget {
   const ThemeSwitcherWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<ThemeBloc, ThemeState>(
+    return BlocBuilder<ThemeCubit, ThemeState>(
       builder: (context, state) {
         final isDarkThem =
             state is CurrentThemeState ? state.isDarkTheme : false;
@@ -16,9 +17,7 @@ class ThemeSwitcherWidget extends StatelessWidget {
         return InkWell(
           borderRadius: BorderRadius.circular(30),
           onTap: () {
-            context
-                .read<ThemeBloc>()
-                .add(ToggleThemeEvent(isDarkTheme: !isDarkThem));
+            context.read<ThemeCubit>().updateTheme();
           },
           child: Padding(
             padding: const EdgeInsets.all(6),

@@ -1,12 +1,14 @@
-part of 'header_bloc.dart';
+import 'package:equatable/equatable.dart';
 
-@immutable
-sealed class HeaderState {}
+abstract class HeaderState extends Equatable {
+  @override
+  List<Object?> get props => throw UnimplementedError();
+}
 
-final class HeaderInitialIndex extends HeaderState {}
-
-final class HeaderIndexValue extends HeaderState {
+class HeaderIndexState extends HeaderState {
   final int index;
 
-  HeaderIndexValue({required this.index});
+  HeaderIndexState({required this.index});
+  @override
+  List<Object> get props => [index];
 }

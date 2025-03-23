@@ -15,19 +15,19 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  final ScrollController scrollController = ScrollController();
+  final ScrollController _scrollController = ScrollController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
         children: [
-          Header(scrollController: scrollController),
+          Header(scrollController: _scrollController),
           Expanded(
             child: ListView(
-              controller: scrollController,
+              controller: _scrollController,
               children: [
-                AboutMe(scrollController: scrollController),
+                AboutMe(scrollController: _scrollController),
                 const Projects(),
                 const Experience(),
                 const Testimonials(),

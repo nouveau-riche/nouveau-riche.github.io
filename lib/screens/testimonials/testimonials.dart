@@ -6,7 +6,8 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:nikunj_portfolio/utils/constants.dart';
 import 'package:nikunj_portfolio/data/data/testimonial_data.dart';
 import 'package:nikunj_portfolio/screens/testimonials/animated_dot_widget.dart';
-import 'package:nikunj_portfolio/data/bloc/testimonial/testimonial_bloc.dart';
+import 'package:nikunj_portfolio/data/bloc/testimonial/testimonial_state.dart';
+import 'package:nikunj_portfolio/data/bloc/testimonial/testimonial_cubit.dart';
 import 'package:nikunj_portfolio/screens/testimonials/testimonial_widget.dart';
 
 class Testimonials extends StatelessWidget {
@@ -41,9 +42,7 @@ class Testimonials extends StatelessWidget {
                 autoPlayInterval: kTestimonialSlidingDuration,
                 height: 258,
                 onPageChanged: (page, _) {
-                  context
-                      .read<TestimonialBloc>()
-                      .add(UpdatePageEvent(index: page));
+                  context.read<TestimonialCubit>().updateIndex(page);
                 },
               ),
               items: testimonialList
@@ -51,9 +50,9 @@ class Testimonials extends StatelessWidget {
                   .toList(),
             ),
           ),
-          BlocBuilder<TestimonialBloc, TestimonialState>(
+          BlocBuilder<TestimonialCubit, TestimonialState>(
             builder: (context, state) {
-              final index = state is CurrentTestimonialPage ? state.index : 0;
+              final index = state is TestimonialCurrentPage ? state.index : 0;
 
               return AnimatedDotWidget(
                 currentSelectedDot: index,

@@ -1,12 +1,15 @@
-part of 'theme_bloc.dart';
+import 'package:equatable/equatable.dart';
 
-@immutable
-sealed class ThemeState {}
-
-final class ThemeInitial extends ThemeState {}
+abstract class ThemeState extends Equatable {
+  @override
+  List<Object?> get props => throw UnimplementedError();
+}
 
 class CurrentThemeState extends ThemeState {
   final bool isDarkTheme;
 
   CurrentThemeState({required this.isDarkTheme});
+
+  @override
+  List<Object> get props => [isDarkTheme];
 }

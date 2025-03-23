@@ -1,12 +1,15 @@
-part of 'testimonial_bloc.dart';
+import 'package:equatable/equatable.dart';
 
-@immutable
-sealed class TestimonialState {}
+abstract class TestimonialState extends Equatable {
+  @override
+  List<Object?> get props => throw UnimplementedError();
+}
 
-final class TestimonialInitial extends TestimonialState {}
-
-class CurrentTestimonialPage extends TestimonialState {
+class TestimonialCurrentPage extends TestimonialState {
   final int index;
 
-  CurrentTestimonialPage({required this.index});
+  TestimonialCurrentPage({required this.index});
+
+  @override
+  List<Object?> get props => [index];
 }

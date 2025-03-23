@@ -15,7 +15,8 @@ class UrlLauncherUtils {
       scheme: 'mailto',
       path: 'nikunjsha02@gmail.com',
       query: _encodeQueryParameters(<String, String>{
-        'subject': 'Mobile Developer',
+        'subject': 'Mobile Developer Requirement',
+        'body': 'Hi Nikunj,'
       }),
     );
 

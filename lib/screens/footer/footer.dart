@@ -52,7 +52,7 @@ class Footer extends StatelessWidget {
                     'Call',
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
-                  Text(
+                  SelectableText(
                     kPhoneNo,
                     style: TextStyle(fontWeight: FontWeight.w600, fontSize: 13),
                   ),
@@ -75,7 +75,7 @@ class Footer extends StatelessWidget {
                           fontSize: 14,
                         ),
                       ),
-                      Text(
+                      SelectableText(
                         kEmail,
                         style: TextStyle(
                           fontWeight: FontWeight.w600,

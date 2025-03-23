@@ -45,7 +45,7 @@ class ProjectCardWidget extends StatelessWidget {
               const SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
-                child: Text(
+                child: SelectableText(
                   project.description,
                   style: const TextStyle(
                     fontSize: 15,

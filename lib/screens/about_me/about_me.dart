@@ -170,7 +170,7 @@ class AboutMe extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const Text(
+                    const SelectableText(
                       'Enthusiastic Flutter Developer eager to\ncontribute to team success through hard work, \nattention to detail and excellent organizational \nskills. Clear understanding of Flutter, Firebase \nand Data Structure. Motivated to learn, grow and excel.',
                       style: TextStyle(
                         wordSpacing: 1,

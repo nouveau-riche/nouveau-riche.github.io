@@ -33,8 +33,8 @@ class Experience extends StatelessWidget {
         ),
         const SizedBox(height: 26),
         SizedBox(
-          height: mq.height * 0.74,
-          width: mq.width * 0.7,
+          height: mq.height * 0.72,
+          width: mq.width * 0.66,
           child: StackedCardCarousel(
             spaceBetweenItems: 550,
             initialOffset: 0,

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:nikunj_portfolio/data/bloc/theme/theme_bloc.dart';
+import 'package:nikunj_portfolio/data/bloc/theme/theme_cubit.dart';
+import 'package:nikunj_portfolio/data/bloc/theme/theme_state.dart';
 import 'package:nikunj_portfolio/generated/assets.dart';
 import 'package:nikunj_portfolio/screens/header/header_btn_parent_widget.dart';
 import 'package:nikunj_portfolio/screens/header/theme_switcher_widget.dart';
@@ -28,10 +29,9 @@ class Header extends StatelessWidget {
           ),
           InkWell(
             onTap: () {},
-            child: BlocBuilder<ThemeBloc, ThemeState>(
+            child: BlocBuilder<ThemeCubit, ThemeState>(
               builder: (context, state) {
-                final isDarkTheme =
-                    state is CurrentThemeState ? state.isDarkTheme : false;
+                final isDarkTheme = state is CurrentThemeState ? state.isDarkTheme : false;
 
                 return Image.asset(
                   isDarkTheme

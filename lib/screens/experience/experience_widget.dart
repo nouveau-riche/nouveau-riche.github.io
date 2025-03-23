@@ -14,7 +14,7 @@ class ExperienceCard extends StatelessWidget {
     final mq = MediaQuery.sizeOf(context);
 
     return Container(
-      height: mq.height * 0.61,
+      height: mq.height * 0.6,
       width: mq.width * 0.62,
       margin: const EdgeInsets.only(top: 10),
       decoration: BoxDecoration(
@@ -89,18 +89,38 @@ class ExperienceCard extends StatelessWidget {
           const SizedBox(height: 20),
           Padding(
             padding: const EdgeInsets.all(8),
-            child: Text(
-              experience.description,
-              style: const TextStyle(
-                fontSize: 15,
-                color: Colors.black54,
-                fontWeight: FontWeight.bold,
-              ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: experience.description
+                  .map(
+                    (item) => Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const SelectableText(
+                          '♦ ',
+                          style: TextStyle(
+                            fontSize: 15,
+                            color: Colors.black54,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Expanded(
+                          child: SelectableText(
+                            item,
+                            style: const TextStyle(
+                              color: Colors.black54,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                  .toList(),
             ),
           ),
           const Spacer(),
           TechnologiesUsedWidget(experience: experience),
-          const SizedBox(height: 16),
         ],
       ),
     );
