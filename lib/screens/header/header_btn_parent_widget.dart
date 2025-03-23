@@ -23,13 +23,6 @@ class HeaderBtnParentWidget extends StatelessWidget {
     final mq = MediaQuery.sizeOf(context);
 
     return BlocBuilder<HeaderCubit, HeaderState>(
-      buildWhen: (previous, current) {
-        return previous != current;
-        // if (previous is HeaderIndexState && current is HeaderIndexState) {
-        //   return true;
-        // }
-        // return true;
-      },
       builder: (context, state) {
         if (state is HeaderIndexState) {
           final index = state.index;
