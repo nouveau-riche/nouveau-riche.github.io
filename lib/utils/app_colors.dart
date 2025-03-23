@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
-  // Color.fromRGBO(229,224,232,1)
-
   static ThemeData lightTheme() {
     return ThemeData.light().copyWith(
       brightness: Brightness.light,
@@ -14,6 +12,9 @@ class AppColors {
       shadowColor: Colors.grey,
       canvasColor: const Color.fromRGBO(230, 218, 206, 1),
       focusColor: const Color.fromRGBO(244, 236, 230, 1),
+      textSelectionTheme: const TextSelectionThemeData(
+        selectionColor: Color.fromRGBO(187, 214, 251, 1),
+      ),
     );
   }
 
@@ -25,6 +26,9 @@ class AppColors {
       shadowColor: Colors.white38,
       canvasColor: const Color.fromRGBO(50, 44, 38, 1),
       focusColor: const Color.fromRGBO(89, 77, 69, 1),
+      textSelectionTheme: const TextSelectionThemeData(
+        selectionColor: Color.fromRGBO(187, 214, 251, 1),
+      ),
     );
   }
 }
