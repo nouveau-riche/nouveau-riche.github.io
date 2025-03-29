@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import 'package:nikunj_portfolio/utils/constants.dart';
 
@@ -32,11 +31,7 @@ class ProjectDescriptionCard extends StatelessWidget {
         children: [
           Text(
             "PROJECTS",
-            style: GoogleFonts.anton(
-              fontWeight: FontWeight.bold,
-              fontSize: 44,
-              letterSpacing: 1.4,
-            ),
+            style: Theme.of(context).textTheme.displayMedium,
           ),
           const SizedBox(height: 40),
           const Text(

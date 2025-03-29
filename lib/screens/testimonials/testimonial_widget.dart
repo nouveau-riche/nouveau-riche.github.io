@@ -48,11 +48,7 @@ class TestimonialWidget extends StatelessWidget {
                 const SizedBox(height: 10),
                 Text(
                   testimonialModal.review,
-                  style: const TextStyle(
-                    fontWeight: FontWeight.w600,
-                    color: Colors.black,
-                    fontSize: 14,
-                  ),
+                  style: Theme.of(context).textTheme.labelSmall,
                 ),
                 const SizedBox(height: 16),
                 const Align(

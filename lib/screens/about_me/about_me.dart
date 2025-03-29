@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import 'package:nikunj_portfolio/generated/assets.dart';
 import 'package:nikunj_portfolio/utils/constants.dart';
@@ -102,11 +101,7 @@ class AboutMe extends StatelessWidget {
                   children: [
                     Text(
                       'Hello',
-                      style: GoogleFonts.anton(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 76,
-                        letterSpacing: 1.8,
-                      ),
+                      style: Theme.of(context).textTheme.displayLarge,
                     ),
                     const Text(
                       'This is Nikunj',
@@ -148,16 +143,7 @@ class AboutMe extends StatelessWidget {
                               1,
                               mq.height * 1.12,
                             ),
-                            style: TextButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20),
-                              ),
-                              side: const BorderSide(
-                                color: Colors.black,
-                                width: 1.6,
-                              ),
-                              foregroundColor: Colors.black,
-                            ),
+                            style: Theme.of(context).outlinedButtonTheme.style,
                             child: const Text(
                               'PROJECTS',
                               style: TextStyle(
@@ -168,14 +154,9 @@ class AboutMe extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SelectableText(
+                    SelectableText(
                       'Enthusiastic Flutter Developer eager to\ncontribute to team success through hard work, \nattention to detail and excellent organizational \nskills. Clear understanding of Flutter, Firebase \nand Data Structure. Motivated to learn, grow and excel.',
-                      style: TextStyle(
-                        wordSpacing: 1,
-                        fontSize: 16,
-                        letterSpacing: 0.6,
-                        height: 1.4,
-                      ),
+                      style: Theme.of(context).textTheme.labelMedium,
                     ),
                   ],
                 ),

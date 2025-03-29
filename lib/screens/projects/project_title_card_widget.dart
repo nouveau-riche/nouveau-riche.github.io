@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ProjectTitleCardWidget extends StatelessWidget {
   final String title;
@@ -33,11 +32,7 @@ class ProjectTitleCardWidget extends StatelessWidget {
         quarterTurns: 3,
         child: Text(
           title,
-          style: GoogleFonts.anton(
-            fontWeight: FontWeight.bold,
-            fontSize: 44,
-            letterSpacing: 1.4,
-          ),
+          style: Theme.of(context).textTheme.displayMedium,
         ),
       ),
     );

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 import 'package:nikunj_portfolio/utils/constants.dart';
@@ -21,11 +20,7 @@ class Testimonials extends StatelessWidget {
         children: [
           Text(
             "Hear from My Clients",
-            style: GoogleFonts.anton(
-              fontWeight: FontWeight.bold,
-              fontSize: 44,
-              letterSpacing: 1.4,
-            ),
+            style: Theme.of(context).textTheme.displayMedium,
           ),
           const Text(
             "Building more than just apps – building trust",

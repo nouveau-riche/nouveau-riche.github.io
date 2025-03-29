@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppColors {
   AppColors._();
@@ -15,6 +16,44 @@ class AppColors {
       textSelectionTheme: const TextSelectionThemeData(
         selectionColor: Color.fromRGBO(187, 214, 251, 1),
       ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: TextButton.styleFrom(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
+          side: const BorderSide(
+            color: Colors.black,
+            width: 1.6,
+          ),
+          foregroundColor: Colors.black,
+        ),
+      ),
+      textTheme: TextTheme(
+        displayLarge: GoogleFonts.anton(
+          fontWeight: FontWeight.bold,
+          fontSize: 76,
+          letterSpacing: 1.8,
+          color: const Color.fromRGBO(0, 0, 0, 1),
+        ),
+        displayMedium: GoogleFonts.anton(
+          fontWeight: FontWeight.bold,
+          fontSize: 44,
+          letterSpacing: 1.4,
+          color: const Color.fromRGBO(0, 0, 0, 1),
+        ),
+        labelMedium: const TextStyle(
+          wordSpacing: 1,
+          fontSize: 16,
+          letterSpacing: 0.6,
+          height: 1.4,
+          color: Color.fromRGBO(0, 0, 0, 1),
+        ),
+        labelSmall: const TextStyle(
+          fontWeight: FontWeight.w600,
+          color: Colors.black,
+          fontSize: 14,
+        ),
+      ),
     );
   }
 
@@ -28,6 +67,44 @@ class AppColors {
       focusColor: const Color.fromRGBO(89, 77, 69, 1),
       textSelectionTheme: const TextSelectionThemeData(
         selectionColor: Color.fromRGBO(187, 214, 251, 1),
+      ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: TextButton.styleFrom(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
+          side: const BorderSide(
+            color: Color.fromRGBO(229, 224, 232, 1),
+            width: 1.6,
+          ),
+          foregroundColor: const Color.fromRGBO(229, 224, 232, 1),
+        ),
+      ),
+      textTheme: TextTheme(
+        displayLarge: GoogleFonts.anton(
+          fontWeight: FontWeight.bold,
+          fontSize: 76,
+          letterSpacing: 1.8,
+          color: const Color.fromRGBO(229, 224, 232, 1),
+        ),
+        displayMedium: GoogleFonts.anton(
+          fontWeight: FontWeight.bold,
+          fontSize: 44,
+          letterSpacing: 1.4,
+          color: const Color.fromRGBO(229, 224, 232, 1),
+        ),
+        labelMedium: const TextStyle(
+          wordSpacing: 1,
+          fontSize: 16,
+          letterSpacing: 0.6,
+          height: 1.4,
+          color: Color.fromRGBO(229, 224, 232, 1),
+        ),
+        labelSmall: const TextStyle(
+          fontWeight: FontWeight.w600,
+          color: Color.fromRGBO(229, 224, 232, 1),
+          fontSize: 14,
+        ),
       ),
     );
   }
