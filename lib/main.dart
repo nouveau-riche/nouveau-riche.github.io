@@ -25,13 +25,15 @@ class MyApp extends StatelessWidget {
       ],
       child: BlocBuilder<ThemeCubit, ThemeState>(
         builder: (context, state) {
-          final isDarkTheme =
-              state is CurrentThemeState ? state.isDarkTheme : false;
+          final themeState =
+              state is CurrentThemeState ? state.themeMode : ThemeMode.light;
 
           return MaterialApp(
             title: "Nikunj Portfolio",
             debugShowCheckedModeBanner: false,
-            theme: isDarkTheme ? AppColors.darkTheme() : AppColors.lightTheme(),
+            theme: AppColors.lightTheme(),
+            darkTheme: AppColors.darkTheme(),
+            themeMode: themeState,
             home: const Home(),
           );
         },

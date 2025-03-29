@@ -4,7 +4,7 @@ class AppColors {
   AppColors._();
 
   static ThemeData lightTheme() {
-    return ThemeData.light().copyWith(
+    return ThemeData(
       brightness: Brightness.light,
       primaryColor: const Color.fromRGBO(8, 80, 255, 1),
       scaffoldBackgroundColor: const Color.fromRGBO(255, 255, 255, 1),
@@ -19,7 +19,7 @@ class AppColors {
   }
 
   static ThemeData darkTheme() {
-    return ThemeData.dark().copyWith(
+    return ThemeData(
       brightness: Brightness.dark,
       primaryColor: const Color.fromRGBO(90, 61, 241, 1),
       scaffoldBackgroundColor: const Color.fromRGBO(0, 0, 0, 1),

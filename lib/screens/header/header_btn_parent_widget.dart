@@ -4,19 +4,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:nikunj_portfolio/data/bloc/header/header_cubit.dart';
 import 'package:nikunj_portfolio/data/bloc/header/header_state.dart';
 import 'package:nikunj_portfolio/screens/header/header_btn_widget.dart';
+import 'package:nikunj_portfolio/utils/method_utils.dart';
 
 class HeaderBtnParentWidget extends StatelessWidget {
   final ScrollController scrollController;
 
   const HeaderBtnParentWidget({super.key, required this.scrollController});
-
-  void scrollToIndex(int index, double height) {
-    scrollController.animateTo(
-      index * height,
-      duration: const Duration(milliseconds: 400),
-      curve: Curves.easeInOut,
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +28,7 @@ class HeaderBtnParentWidget extends StatelessWidget {
                 index: 0,
                 currentSelectedIndex: index,
                 scrollFunction: () {
-                  scrollToIndex(0, 0);
+                  scrollToIndex(scrollController, 0, 0);
                 },
               ),
               HeaderBtnWidget(
@@ -43,7 +36,7 @@ class HeaderBtnParentWidget extends StatelessWidget {
                 index: 1,
                 currentSelectedIndex: index,
                 scrollFunction: () {
-                  scrollToIndex(1, mq.height * 1.12);
+                  scrollToIndex(scrollController, 1, mq.height * 1.12);
                 },
               ),
               HeaderBtnWidget(
@@ -51,7 +44,7 @@ class HeaderBtnParentWidget extends StatelessWidget {
                 index: 2,
                 currentSelectedIndex: index,
                 scrollFunction: () {
-                  scrollToIndex(2, mq.height * 0.995);
+                  scrollToIndex(scrollController, 2, mq.height * 0.995);
                 },
               ),
               HeaderBtnWidget(
@@ -59,7 +52,7 @@ class HeaderBtnParentWidget extends StatelessWidget {
                 index: 3,
                 currentSelectedIndex: index,
                 scrollFunction: () {
-                  scrollToIndex(3, mq.height);
+                  scrollToIndex(scrollController, 3, mq.height);
                 },
               ),
             ],

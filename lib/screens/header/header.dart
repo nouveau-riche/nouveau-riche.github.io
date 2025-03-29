@@ -6,12 +6,12 @@ import 'package:nikunj_portfolio/data/bloc/theme/theme_state.dart';
 import 'package:nikunj_portfolio/generated/assets.dart';
 import 'package:nikunj_portfolio/screens/header/header_btn_parent_widget.dart';
 import 'package:nikunj_portfolio/screens/header/theme_switcher_widget.dart';
+import 'package:nikunj_portfolio/utils/method_utils.dart';
 
 class Header extends StatelessWidget {
   final ScrollController scrollController;
 
   const Header({super.key, required this.scrollController});
-
 
   @override
   Widget build(BuildContext context) {
@@ -28,19 +28,21 @@ class Header extends StatelessWidget {
             color: Theme.of(context).primaryColor,
           ),
           InkWell(
-            onTap: () {},
+            onTap: () => scrollToIndex(scrollController, 0, 0),
             child: BlocBuilder<ThemeCubit, ThemeState>(
               builder: (context, state) {
-                final isDarkTheme = state is CurrentThemeState ? state.isDarkTheme : false;
-
-                return Image.asset(
-                  isDarkTheme
-                      ? Assets.iconsSignatureDark
-                      : Assets.iconsSignature,
-                  height: 56,
-                  width: 210,
-                  fit: BoxFit.fill,
-                );
+                if (state is CurrentThemeState) {
+                  return Image.asset(
+                    state.themeMode == ThemeMode.dark
+                        ? Assets.iconsSignatureDark
+                        : Assets.iconsSignature,
+                    height: 56,
+                    width: 210,
+                    fit: BoxFit.fill,
+                  );
+                } else {
+                  return const SizedBox.shrink();
+                }
               },
             ),
           ),

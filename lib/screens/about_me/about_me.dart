@@ -3,8 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'package:nikunj_portfolio/generated/assets.dart';
 import 'package:nikunj_portfolio/utils/constants.dart';
-import 'package:nikunj_portfolio/screens/about_me/follow_btn_tile_widget.dart';
 import 'package:nikunj_portfolio/utils/method_utils.dart';
+import 'package:nikunj_portfolio/screens/about_me/follow_btn_tile_widget.dart';
 
 class AboutMe extends StatelessWidget {
   final ScrollController scrollController;
@@ -143,13 +143,11 @@ class AboutMe extends StatelessWidget {
                         SizedBox(
                           width: 120,
                           child: TextButton(
-                            onPressed: () {
-                              scrollController.animateTo(
-                                1 * mq.height * 1.12,
-                                duration: const Duration(milliseconds: 500),
-                                curve: Curves.easeInOut,
-                              );
-                            },
+                            onPressed: () => scrollToIndex(
+                              scrollController,
+                              1,
+                              mq.height * 1.12,
+                            ),
                             style: TextButton.styleFrom(
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20),

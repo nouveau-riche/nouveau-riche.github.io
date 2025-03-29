@@ -11,35 +11,36 @@ class ThemeSwitcherWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<ThemeCubit, ThemeState>(
       builder: (context, state) {
-        final isDarkThem =
-            state is CurrentThemeState ? state.isDarkTheme : false;
-
-        return InkWell(
-          borderRadius: BorderRadius.circular(30),
-          onTap: () {
-            context.read<ThemeCubit>().updateTheme();
-          },
-          child: Padding(
-            padding: const EdgeInsets.all(6),
-            child: AnimatedSwitcher(
-              duration: const Duration(milliseconds: 300),
-              transitionBuilder: (child, animation) {
-                return ScaleTransition(scale: animation, child: child);
-              },
-              child: isDarkThem
-                  ? const Icon(
-                      Icons.dark_mode,
-                      key: ValueKey('DARK'),
-                      size: 24,
-                    )
-                  : const Icon(
-                      Icons.light_mode,
-                      key: ValueKey('LIGHT'),
-                      size: 24,
-                    ),
+        if (state is CurrentThemeState) {
+          return InkWell(
+            borderRadius: BorderRadius.circular(30),
+            onTap: () {
+              context.read<ThemeCubit>().updateTheme();
+            },
+            child: Padding(
+              padding: const EdgeInsets.all(6),
+              child: AnimatedSwitcher(
+                duration: const Duration(milliseconds: 300),
+                transitionBuilder: (child, animation) {
+                  return ScaleTransition(scale: animation, child: child);
+                },
+                child: state.themeMode == ThemeMode.dark
+                    ? const Icon(
+                        Icons.dark_mode,
+                        key: ValueKey('DARK'),
+                        size: 24,
+                      )
+                    : const Icon(
+                        Icons.light_mode,
+                        key: ValueKey('LIGHT'),
+                        size: 24,
+                      ),
+              ),
             ),
-          ),
-        );
+          );
+        } else {
+          return const SizedBox.shrink();
+        }
       },
     );
   }
