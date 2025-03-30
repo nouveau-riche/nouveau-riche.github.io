@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class ProjectModal {
   final int id;
   final String title;
@@ -11,13 +9,11 @@ class ProjectModal {
   final String? githubUrl;
   final String? playStoreUrl;
   final String? appStoreUrl;
-  final Color cardColor;
 
   ProjectModal({
     required this.id,
     required this.title,
     required this.description,
-    required this.cardColor,
     required this.imageUrl,
     this.hasPlayStoreUrl = false,
     this.hasAppStoreUrl = false,

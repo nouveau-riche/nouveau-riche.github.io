@@ -6,8 +6,13 @@ import 'package:nikunj_portfolio/screens/projects/project_title_card_widget.dart
 
 class ProjectCardWidget extends StatelessWidget {
   final ProjectModal project;
+  final Color cardColor;
 
-  const ProjectCardWidget({super.key, required this.project});
+  const ProjectCardWidget({
+    super.key,
+    required this.project,
+    required this.cardColor,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +27,7 @@ class ProjectCardWidget extends StatelessWidget {
           width: mq.width * 0.25,
           padding: const EdgeInsets.all(20),
           decoration: BoxDecoration(
-            color: project.cardColor,
+            color: cardColor,
             borderRadius: BorderRadius.circular(30),
           ),
           child: Column(
@@ -37,7 +42,7 @@ class ProjectCardWidget extends StatelessWidget {
                   child: Image.asset(
                     project.imageUrl,
                     height: mq.height * 0.28,
-                    width:  mq.width * 0.25,
+                    width: mq.width * 0.25,
                     fit: BoxFit.fill,
                   ),
                 ),

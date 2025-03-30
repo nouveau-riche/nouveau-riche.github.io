@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:nikunj_portfolio/utils/constants.dart';
-import 'package:nikunj_portfolio/screens/footer/follow_widget.dart';
 import 'package:nikunj_portfolio/utils/url_launcher_utils.dart';
+import 'package:nikunj_portfolio/screens/footer/follow_btn_row_widget.dart';
 
 class Footer extends StatelessWidget {
   const Footer({super.key});
@@ -95,30 +95,9 @@ class Footer extends StatelessWidget {
                     'Follow',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  Row(
+                  FollowBtnRowWidget(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      FollowWidget(
-                        icon: FontAwesomeIcons.instagram,
-                        url: kInstagramUrl,
-                      ),
-                      FollowWidget(
-                        icon: FontAwesomeIcons.linkedinIn,
-                        url: kLinkedUrl,
-                      ),
-                      FollowWidget(
-                        icon: FontAwesomeIcons.github,
-                        url: kGithubUrl,
-                      ),
-                      FollowWidget(
-                        icon: FontAwesomeIcons.twitter,
-                        url: kTwitterUrl,
-                      ),
-                      FollowWidget(
-                        url: kMediumUrl,
-                        icon: FontAwesomeIcons.medium,
-                      ),
-                    ],
                   ),
                 ],
               ),

@@ -61,19 +61,19 @@ class ProjectRedirectWidget extends StatelessWidget {
               ),
               child: TextButton.icon(
                 iconAlignment: IconAlignment.end,
-                icon: const Icon(
+                icon: Icon(
                   FontAwesomeIcons.arrowUpRightFromSquare,
-                  color: Colors.black,
+                  color: Theme.of(context).iconTheme.color,
                   size: 14,
                 ),
                 onPressed: () {
                   UrlLauncherUtils.openUrl(project.githubUrl ?? "");
                 },
-                label: const Text(
+                label: Text(
                   "View on Github",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                    color: Theme.of(context).iconTheme.color,
                   ),
                 ),
               ),

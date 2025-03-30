@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:nikunj_portfolio/data/bloc/header/header_cubit.dart';
+import 'package:nikunj_portfolio/data/cubit/header/header_cubit.dart';
 
 class HeaderBtnWidget extends StatelessWidget {
   final int index;

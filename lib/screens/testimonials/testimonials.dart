@@ -5,8 +5,8 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:nikunj_portfolio/utils/constants.dart';
 import 'package:nikunj_portfolio/data/data/testimonial_data.dart';
 import 'package:nikunj_portfolio/screens/testimonials/animated_dot_widget.dart';
-import 'package:nikunj_portfolio/data/bloc/testimonial/testimonial_state.dart';
-import 'package:nikunj_portfolio/data/bloc/testimonial/testimonial_cubit.dart';
+import 'package:nikunj_portfolio/data/cubit/testimonial/testimonial_state.dart';
+import 'package:nikunj_portfolio/data/cubit/testimonial/testimonial_cubit.dart';
 import 'package:nikunj_portfolio/screens/testimonials/testimonial_widget.dart';
 
 class Testimonials extends StatelessWidget {

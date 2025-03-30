@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:nikunj_portfolio/data/bloc/theme/theme_cubit.dart';
-import 'package:nikunj_portfolio/data/bloc/theme/theme_state.dart';
+import 'package:nikunj_portfolio/data/cubit/theme/theme_cubit.dart';
+import 'package:nikunj_portfolio/data/cubit/theme/theme_state.dart';
 import 'package:nikunj_portfolio/screens/home/home.dart';
-import 'package:nikunj_portfolio/data/bloc/header/header_cubit.dart';
-import 'package:nikunj_portfolio/data/bloc/testimonial/testimonial_cubit.dart';
+import 'package:nikunj_portfolio/data/cubit/header/header_cubit.dart';
+import 'package:nikunj_portfolio/data/cubit/testimonial/testimonial_cubit.dart';
 import 'package:nikunj_portfolio/utils/app_colors.dart';
 
 void main() {
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       ],
       child: BlocBuilder<ThemeCubit, ThemeState>(
         builder: (context, state) {
-          final themeState =
+          final themeMode =
               state is CurrentThemeState ? state.themeMode : ThemeMode.light;
 
           return MaterialApp(
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             theme: AppColors.lightTheme(),
             darkTheme: AppColors.darkTheme(),
-            themeMode: themeState,
+            themeMode: themeMode,
             home: const Home(),
           );
         },

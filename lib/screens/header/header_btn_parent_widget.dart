@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:nikunj_portfolio/data/bloc/header/header_cubit.dart';
-import 'package:nikunj_portfolio/data/bloc/header/header_state.dart';
+import 'package:nikunj_portfolio/data/cubit/header/header_cubit.dart';
+import 'package:nikunj_portfolio/data/cubit/header/header_state.dart';
 import 'package:nikunj_portfolio/screens/header/header_btn_widget.dart';
 import 'package:nikunj_portfolio/utils/method_utils.dart';
 

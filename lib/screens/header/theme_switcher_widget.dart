@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:nikunj_portfolio/data/bloc/theme/theme_cubit.dart';
-import 'package:nikunj_portfolio/data/bloc/theme/theme_state.dart';
+import 'package:nikunj_portfolio/data/cubit/theme/theme_cubit.dart';
+import 'package:nikunj_portfolio/data/cubit/theme/theme_state.dart';
 
 class ThemeSwitcherWidget extends StatelessWidget {
   const ThemeSwitcherWidget({super.key});

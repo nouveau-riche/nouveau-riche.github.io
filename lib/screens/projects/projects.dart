@@ -52,7 +52,14 @@ class _ProjectsState extends State<Projects> {
               scrollDirection: Axis.horizontal,
               children: [
                 const ProjectDescriptionCard(),
-                ...projects.map((e) => ProjectCardWidget(project: e)),
+                ...projects.map(
+                  (e) => ProjectCardWidget(
+                    project: e,
+                    cardColor: e.id % 2 == 1
+                        ? Theme.of(context).cardColor
+                        : Theme.of(context).highlightColor,
+                  ),
+                ),
                 const SizedBox(width: 10),
               ],
             ),
