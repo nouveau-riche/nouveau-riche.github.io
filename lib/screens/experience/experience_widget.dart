@@ -59,6 +59,7 @@ class ExperienceCard extends StatelessWidget {
                     experience.jobTitle,
                     style: const TextStyle(
                       fontWeight: FontWeight.w900,
+                      color: Colors.black,
                       fontSize: 20,
                     ),
                   ),

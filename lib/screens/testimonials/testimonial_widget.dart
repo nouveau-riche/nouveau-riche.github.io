@@ -29,11 +29,6 @@ class TestimonialWidget extends StatelessWidget {
                   Colors.greenAccent.withValues(alpha: 0.1),
                   Colors.blue.withValues(alpha: 0.1),
                   Colors.amber.withValues(alpha: 0.1),
-                  // Colors.pink.shade900.withValues(alpha: 0.2),
-                  // Colors.greenAccent.shade700.withValues(alpha: 0.2),
-                  // Colors.blue.shade900.withValues(alpha: 0.2),
-                  // Colors.amber.shade900.withValues(alpha: 0.2),
-
                 ],
                 begin: Alignment.bottomLeft,
                 end: Alignment.topRight,
@@ -85,7 +80,6 @@ class TestimonialWidget extends StatelessWidget {
                             testimonialModal.reviewerName,
                             style: const TextStyle(
                               fontWeight: FontWeight.w600,
-                              color: Colors.black,
                               fontSize: 12,
                             ),
                           ),

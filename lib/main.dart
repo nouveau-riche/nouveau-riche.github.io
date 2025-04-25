@@ -25,8 +25,7 @@ class MyApp extends StatelessWidget {
       ],
       child: BlocBuilder<ThemeCubit, ThemeState>(
         builder: (context, state) {
-          final themeMode =
-              state is CurrentThemeState ? state.themeMode : ThemeMode.light;
+          final themeMode = state is CurrentThemeState ? state.themeMode : ThemeMode.light;
 
           return MaterialApp(
             title: "Nikunj Portfolio",
